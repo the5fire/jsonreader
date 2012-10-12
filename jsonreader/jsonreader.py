@@ -109,8 +109,10 @@ class MainFrame(wx.Frame):
             if isinstance(item, dict):
                 self.add_tree_nodes(parent_item,item)
             else:
-                if not isinstance(items[item], dict) and not isinstance(items[item], type([])):
+                if isinstance(items, dict) and not isinstance(items[item], (dict, list)):
                     self.tree.AppendItem(parent_item, '%s : %s' % (item,items[item]))
+                elif isinstance(items,list):
+                    self.tree.AppendItem(parent_item, item)
                 else:
                     new_parent =  self.tree.AppendItem(parent_item, item)
                     self.add_tree_nodes(new_parent,items[item])
