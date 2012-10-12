@@ -64,6 +64,8 @@ class MainFrame(wx.Frame):
 
     def get_handler(self, event):
         url = self.urlinput.GetValue()
+        if not url.startswith('http://'):
+            url = 'http://%s' % url
         #添加查询url记录到下面的列表中
         if url not in self.url_list.Items:
             self.url_list.Append(url)
