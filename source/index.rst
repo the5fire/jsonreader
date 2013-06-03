@@ -3,10 +3,15 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to jsonreader's documentation!
+这里是jsonreader的中文文档
 ======================================
 
 Contents:
+
+.. code:: python
+
+    def hello(name):
+        print 'hello %s' % name
 
 .. toctree::
    :maxdepth: 2
