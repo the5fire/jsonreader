@@ -6,12 +6,17 @@
 这里是jsonreader的中文文档
 ======================================
 
-Contents:
+安装:
+----------------------
 
-.. code:: python
+pip install -e git+https://github.com/the5fire/jsonreader.git#egg=jsonreader
 
-    def hello(name):
-        print 'hello %s' % name
+运行
+----------------------
+
+::
+
+    $jsonreader
 
 .. toctree::
    :maxdepth: 2

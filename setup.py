@@ -5,18 +5,19 @@ from setuptools import setup, find_packages
 
 
 setup(
-    name = 'jsonreader',
-    version = '0.0.1',
-    description = 'a json reader base on wxpython',
-    author = 'the5fire',
-    author_email = 'thefivefire@gmail.com',
-    url = 'http://www.the5fire.net',
-    packages = find_packages(),
-    install_requires = [
+    name='jsonreader',
+    version='0.0.1',
+    description='a json reader base on wxpython',
+    author='the5fire',
+    author_email='thefivefire@gmail.com',
+    url='http://www.the5fire.com',
+    packages=find_packages(),
+    install_requires=[
+        'wxPython',
     ],
-    entry_points = {
+    entry_points={
         'console_scripts': [
-            'jsonreader = jsonreader.jsonreader:main'    
-        ]    
+            'jsonreader = jsonreader.jsonreader:main'
+        ]
     }
 )
